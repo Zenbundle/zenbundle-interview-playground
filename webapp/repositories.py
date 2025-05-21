@@ -10,6 +10,7 @@ _ENTITY_STORE = {}
 class UserRepository:
     async def add_user(self, user: User):
         _ENTITY_STORE[user.id] = user
+        return user
 
     async def get_user_by_id(self, user_id: UUID) -> Optional[User]:
         return _ENTITY_STORE.get(user_id)

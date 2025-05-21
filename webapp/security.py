@@ -49,10 +49,7 @@ async def login_user(email: EmailStr, password: SecretStr, response: Response):
     if not user:
         raise AuthenticationException()
 
-    print(user)
-
     hashed_password = hash_password(password.get_secret_value(), user.salt.get_secret_value())
-    print(hashed_password, user.password.get_secret_value())
 
     if hashed_password != user.password.get_secret_value():
         raise AuthenticationException()

@@ -44,9 +44,7 @@ class Campaign(Entity):
 
 class Ad(Entity):
     id: UUID
-    content_type: Literal[
-        "text/plain",
-    ]
+    content_type: Literal["text/plain",]
     body: str
     campaign: Campaign
     created_on: datetime
