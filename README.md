@@ -1,4 +1,4 @@
-# Project Name
+# Zenbundle Interview Playground
 
 ## Overview
 
@@ -21,18 +21,17 @@ This project contains:
 
 From the **project root**:
 
-'''
+```
 virtualenv venv -p python3.11
 source venv/bin/activate   # On Windows: venv\\Scripts\\activate
-'''
+```
 
 ### 2. Install Python dependencies with Poetry
 
-'''
+```
 cd webapp
 poetry install
-'''
-
+```
 
 ### 3. Start the FastAPI app in development mode
 
@@ -40,8 +39,8 @@ poetry install
 fastapi run app.py --reload
 ```
 
-- The API will be available at [http://127.0.0.1:8000](http://127.0.0.1:8000)
-- Interactive API docs: [http://127.0.0.1:8000/docs](http://127.0.0.1:8000/docs)
+- The API will be available at [http://localhost:8000](http://localhost:8000)
+- Interactive API docs: [http://localhost:8000/docs](http://localhost:8000/docs)
 
 ---
 
