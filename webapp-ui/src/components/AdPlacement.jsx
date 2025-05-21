@@ -9,8 +9,12 @@ export function AdPlacement({ id }) {
 
   useEffect(() => {
     const initialize = async () => {
-      const ad = await deliveryApi.fetchAd(id);
-      setAd(ad);
+      try {
+        const ad = await deliveryApi.fetchAd(id);
+        setAd(ad);
+      } catch (e) {
+        /* empty */
+      }
     };
 
     initialize();
