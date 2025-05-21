@@ -46,9 +46,6 @@ class Ad(Entity):
     id: UUID
     content_type: Literal[
         "text/plain",
-        "image/jpeg",
-        "image/png",
-        "video/mp4",
     ]
     body: str
     campaign: Campaign
