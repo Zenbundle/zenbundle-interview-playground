@@ -1,9 +1,8 @@
 import random
 from datetime import datetime
-from http.client import HTTPException
 from uuid import UUID, uuid4
 
-from fastapi import APIRouter
+from fastapi import APIRouter, HTTPException
 
 from ..http import ResponseBodyModel
 from ..models import Ad, Campaign
