@@ -1,0 +1,18 @@
+[tool.poetry]
+name = "zenbundle-interview-playground"
+version = "0.1.0"
+description = ""
+authors = ["Giacomo <giacomo@zenbundle.com>"]
+packages = [{include = "webapp"}]
+
+[tool.poetry.dependencies]
+python = "^3.11"
+fastapi = {extras = ["standard"], version = "^0.115.12"}
+inflection = "^0.5.1"
+pre-commit = "^4.2.0"
+pytest = "^8.3.5"
+
+
+[build-system]
+requires = ["poetry-core"]
+build-backend = "poetry.core.masonry.api"
