@@ -35,7 +35,7 @@ poetry install
 ### 3. Start the FastAPI app in development mode
 
 ```
-fastapi run app.py --reload
+poetry run fastapi run app.py --reload
 ```
 
 - The API will be available at [http://localhost:8000](http://localhost:8000)
