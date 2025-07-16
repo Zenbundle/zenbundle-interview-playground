@@ -29,7 +29,6 @@ source venv/bin/activate   # On Windows: venv\\Scripts\\activate
 ### 2. Install Python dependencies with Poetry
 
 ```
-cd webapp
 poetry install
 ```
 
