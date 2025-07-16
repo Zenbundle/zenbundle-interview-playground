@@ -42,7 +42,7 @@ export const ApiProvider = ({ children }) => {
   const navigate = useNavigate();
 
   const axiosInstance = axios.create({
-    baseURL: 'http://0.0.0.0:8000/',
+    baseURL: 'http://127.0.0.1:8000/',
     withCredentials: true,
   });
 
